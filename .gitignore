@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE-specific files
+.idea/
+
+# Large data files
+# We don't want to track large CSV or ZIP files in Git
+*.csv
+*.zip
+*.csv.gz
+
+# Environment folders
+# If you ever create a virtual environment (e.g., venv), it should be ignored
+venv/
+.venv/
