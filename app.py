@@ -38,7 +38,7 @@ def get_unique_genres(df):
 
 # --- App Layout ---
 st.title("Interactive Movie Dashboard 🎬")
-df = load_data('movies_metadata.csv')
+df = load_data('movies_sample.csv')
 
 # --- Sidebar for filters ---
 st.sidebar.header("Filter Options")
@@ -73,7 +73,7 @@ st.write(f"Displaying movies from **{selected_years[0]}** to **{selected_years[1
 if selected_genres:
     st.write(f"Filtered by genres: **{', '.join(selected_genres)}**")
 
-# --- NEW: Check if the filtered DataFrame is empty ---
+# --- Check if the filtered DataFrame is empty ---
 if filtered_df.empty:
     st.warning("No movies found for the selected criteria. Please adjust your filters.")
 else:
@@ -87,7 +87,7 @@ else:
         )
     st.dataframe(display_df, hide_index=True)
 
-    # --- NEW: Add dynamic charts ---
+    # --- Add dynamic charts ---
     st.header("Visualizations for Selected Period")
 
     # Chart 1: Top 10 Highest Rated Movies

@@ -11,7 +11,7 @@ __pycache__/
 *.csv
 *.zip
 *.csv.gz
-
+movies_metadata.csv
 # Environment folders
 # If you ever create a virtual environment (e.g., venv), it should be ignored
 venv/
